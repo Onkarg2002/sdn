@@ -1,3 +1,5 @@
+create a file in mininet
+nano <filename>
 from mininet.net import Mininet
 from mininet.node import OVSSwitch, Controller
 from mininet.cli import CLI
