@@ -1,0 +1,16 @@
+
+sudo apt-get update
+sudo apt-get install xinit flwm
+startx
+[UXTerm]
+sudo ~/mininet/examples/miniedit.py
+____________________
+sudo apt-get update
+sudo apt-get install xinit flwm
+[switch network of wm to bridge of miniet]
+ifconfig
+[on ubuntu]
+sudo apt-get update
+ssh -Y mininet@[ip addr of mininet]
+
+_____
