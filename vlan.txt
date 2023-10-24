@@ -1,0 +1,15 @@
+vlan 10
+name comp1
+vlan 20
+name comp2
+int f0/0
+switchport mode access
+switchport access vlan 10
+
+int f0/5
+switchport mode trunk
+
+[if you want inter-vlan]
+int f0/0.10
+encapsulation dot1q 10
+ip add 192.168.1.1 255.255.255.0
