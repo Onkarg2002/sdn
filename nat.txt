@@ -1,0 +1,14 @@
+int f0/0 
+ip nat inside
+int f0/1
+ip nat outside
+exit
+ip nat pool pool1 4.4.4.1 4.4.4.5 netmask 255.255.255.0
+access-list 1 permit 192.168.1.0 0.0.0.255
+ip nat inside source list 1 pool pool1
+
+[close terminal > fastforward > send message from inside to outside then]
+
+exit
+exit
+show ip nat translations
